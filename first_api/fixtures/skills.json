@@ -1,0 +1,50 @@
+[
+  {
+    "model": "first_api.skill",
+    "pk": 1,
+    "fields": {
+      "name": "Ruby on Rails",
+      "level": 2
+    }
+  },
+  {
+    "model": "first_api.skill",
+    "pk": 2,
+    "fields": {
+      "name": "Django",
+      "level": 1
+    }
+  },
+  {
+    "model": "first_api.skill",
+    "pk": 3,
+    "fields": {
+      "name": "React",
+      "level": 2
+    }
+  },
+  {
+    "model": "first_api.skill",
+    "pk": 4,
+    "fields": {
+      "name": "Elasticsearch",
+      "level": 0
+    }
+  },
+  {
+    "model": "first_api.skill",
+    "pk": 5,
+    "fields": {
+      "name": "Kafka",
+      "level": 0
+    }
+  },
+  {
+    "model": "first_api.skill",
+    "pk": 6,
+    "fields": {
+      "name": "SQL",
+      "level": 2
+    }
+  }
+]
