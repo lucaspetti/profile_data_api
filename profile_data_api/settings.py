@@ -27,7 +27,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['lucaspetti.pythonanywhere.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -127,3 +126,4 @@ X_FRAME_OPTIONS = 'DENY'
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
