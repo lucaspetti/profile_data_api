@@ -1,6 +1,7 @@
 from django.db import models
 
 class Skill(models.Model):
+  owner = models.ForeignKey('auth.User', related_name='skills', on_delete=models.CASCADE, null=True)
   name = models.CharField(max_length=100)
   level = models.IntegerField()
 
