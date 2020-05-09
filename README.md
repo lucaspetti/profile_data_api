@@ -1,6 +1,6 @@
 # Profile Data API
 
-A simple Django app using the Rest Framework to retrieve data for my online profile.
+A Django app using the Rest Framework made to retrieve and manage data for an online profile.
 
 ### Setup
 

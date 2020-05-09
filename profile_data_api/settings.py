@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cna8c*mq#o4ain046e@e%iy-cbs9d6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['lucaspetti.pythonanywhere.com']
+ALLOWED_HOSTS = ['lucaspetti.pythonanywhere.com', 'localhost']
 
 # Application definition
 
@@ -69,7 +69,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'profile_data_api.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
