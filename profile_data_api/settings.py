@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['lucaspetti.pythonanywhere.com', 'localhost']
 
 INSTALLED_APPS = [
     'rest_framework',
+    'corsheaders',
     'first_api.apps.FirstApiConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -113,12 +115,14 @@ USE_L10N = True
 
 USE_TZ = True
 
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = False
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_HSTS_SECONDS = 0
 SESSION_COOKIE_STORE = True
 SESSION_COOKIE_SECURE = True
 SECURE_BROWSER_XSS_FILTER = True
-SECURE_REFERRER_POLICY = 'origin'
+
 X_FRAME_OPTIONS = 'DENY'
 
 # Static files (CSS, JavaScript, Images)
