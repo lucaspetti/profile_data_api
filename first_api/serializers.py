@@ -12,9 +12,9 @@ class SkillSerializer(serializers.HyperlinkedModelSerializer):
 class AppSerializer(serializers.HyperlinkedModelSerializer):
   class Meta:
     model = App
-    fields = ('name', 'description')
+    fields = ('name', 'url', 'key', 'description')
 
 class AlbumSerializer(serializers.HyperlinkedModelSerializer):
   class Meta:
     model = Album
-    fields = ('name', 'url')
+    fields = ('name', 'url', 'key', 'description', 'year')
